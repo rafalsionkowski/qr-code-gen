@@ -119,11 +119,27 @@
             </exclusions>
         </dependency>
         <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>javase</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+        <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.1.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>faker</groupId>
+            <artifactId>faker</artifactId>
+            <version>0.3.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>

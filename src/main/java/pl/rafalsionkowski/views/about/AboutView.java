@@ -7,14 +7,14 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
-@PageTitle("About")
-@Route(value = "about")
+@PageTitle("Generated QR Code")
+@Route(value = "qr-code-generated")
 public class AboutView extends VerticalLayout {
 
     public AboutView() {
         setSpacing(false);
 
-        Image img = new Image("images/empty-plant.png", "placeholder plant");
+        Image img = new Image("qrCodesTemp/testWithApi.png", "placeholder plant");
         img.setWidth("200px");
         add(img);
 
