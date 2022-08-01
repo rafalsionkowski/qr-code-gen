@@ -21,12 +21,9 @@ import org.springframework.stereotype.Service;
 
 public class QrCodeService {
 
-    private int height = 100;
-    private int width = 100;
-    private String fileName;
 
 
-    public void createQR(String data) throws IOException, WriterException {
+    public void createQR(String data, int height, int width) throws IOException, WriterException {
 
         String path = "src/main/resources/META-INF/resources/qrCodesTemp/testWithApi.png";
         String charset = "UTF-8";
@@ -48,10 +45,6 @@ public class QrCodeService {
                 new File(path));
     }
 
-    public static void main(String[] args) throws IOException, WriterException {
-        QrCodeService qrCodeService = new QrCodeService();
-        qrCodeService.createQR("dasdadsdas");
-    }
 
 
 }
