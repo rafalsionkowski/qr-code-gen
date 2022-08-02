@@ -33,8 +33,7 @@ public class QRCodeView extends VerticalLayout {
 
 
         TextField textField = new TextField("Your QR string");
-        IntegerField heightField = new IntegerField("Height (px)");
-        IntegerField widthField = new IntegerField("Width (px)");
+        IntegerField heightField = new IntegerField("Height (px)"); IntegerField widthField = new IntegerField("Width (px)");
 
         textField.addThemeName("bordered");
 
@@ -59,7 +58,7 @@ public class QRCodeView extends VerticalLayout {
         button.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
         button.addClickShortcut(Key.ENTER);
         addClassName("centered-content");
-        add(textField, button, heightField, widthField);
+        add(textField, heightField, widthField, button);
 
     }
 
